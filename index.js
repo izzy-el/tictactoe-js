@@ -118,6 +118,9 @@ function checkWinner(array) {
 }
 
 function resetBoard() {
+    document.getElementById("players-turn").innerHTML = 1;
+    determineElement = 0;
+    isOver = false;
     boardGame = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
     document.getElementById('1').innerHTML = "";
     document.getElementById('2').innerHTML = "";
