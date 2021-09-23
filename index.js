@@ -9,19 +9,29 @@ function insert(id) {
     else {
         if(determineElement % 2 == 0) {
             document.getElementById(id).innerHTML = "X";
+            
             addArray(id, 'X');
         } else {
-            document.getElementById(id).innerHTML = "O";   
+            document.getElementById(id).innerHTML = "O";
             addArray(id, 'O'); 
         }
 
         determineElement++;
+        displayPlayersTurn();
     }
 
     checkWinner(boardGame);
     
     console.log(boardGame[0][0], boardGame[0][1], boardGame[0][2]);
 
+}
+
+function displayPlayersTurn() {
+    if(determineElement % 2 == 0) {
+        document.getElementById("players-turn").innerHTML = 1;
+    } else {
+        document.getElementById("players-turn").innerHTML = 2;
+    }
 }
 
 function addArray(id, symbol) {
