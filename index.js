@@ -21,8 +21,6 @@ function insert(id) {
     }
 
     checkWinner(boardGame);
-    
-    console.log(boardGame[0][0], boardGame[0][1], boardGame[0][2]);
 
 }
 
