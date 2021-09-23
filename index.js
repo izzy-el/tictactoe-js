@@ -1,5 +1,5 @@
 let determineElement = 0; //Used to determine if it is going to be a 'X' or a 'O' 
-let boardGame = [[1, 2, 3], [4, 5, 6], [7, 8, 9]] //Initial values for the array representing the board game
+let boardGame = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]; //Initial values for the array representing the board game
 let isOver = false; //Inform if the game is over or not
 
 function insert(id) {
@@ -115,4 +115,17 @@ function checkWinner(array) {
         window.alert("It is a TIE!");
     }
 
+}
+
+function resetBoard() {
+    boardGame = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+    document.getElementById('1').innerHTML = "";
+    document.getElementById('2').innerHTML = "";
+    document.getElementById('3').innerHTML = "";
+    document.getElementById('4').innerHTML = "";
+    document.getElementById('5').innerHTML = "";
+    document.getElementById('6').innerHTML = "";
+    document.getElementById('7').innerHTML = "";
+    document.getElementById('8').innerHTML = "";
+    document.getElementById('9').innerHTML = "";
 }

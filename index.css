@@ -6,6 +6,21 @@
 
 p {
     color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+button {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: lightgray;
 }
 
 body {
